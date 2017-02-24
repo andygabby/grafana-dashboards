@@ -53,7 +53,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -189,7 +189,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -308,7 +308,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -423,7 +423,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -550,7 +550,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -664,7 +664,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -814,7 +814,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -914,7 +914,7 @@
                         "Innodb Activity": "#BA43A9"
                     }, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -1024,7 +1024,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -1140,7 +1140,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -1270,7 +1270,7 @@
                         "Avg Row Lock Wait Time": "#BF1B00"
                     }, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -1368,7 +1368,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -1486,7 +1486,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -1607,7 +1607,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -1763,7 +1763,7 @@
                     "text": "auto", 
                     "value": "$__auto_interval"
                 }, 
-                "datasource": "Prometheus", 
+                "datasource": "$Source", 
                 "hide": 0, 
                 "includeAll": false, 
                 "label": "Interval", 
@@ -1815,11 +1815,21 @@
                 "query": "1s,5s,1m,5m,1h,6h,1d", 
                 "refresh": 2, 
                 "type": "interval"
+            },
+            {
+                "hide": 0,
+                "label": null,
+                "name": "Source",
+                "options": [],
+                "query": "prometheus",
+                "refresh": 1,
+                "regex": "",
+                "type": "datasource"
             }, 
             {
                 "allFormat": "glob", 
                 "allValue": null, 
-                "datasource": "Prometheus", 
+                "datasource": "$Source", 
                 "hide": 0, 
                 "includeAll": false, 
                 "label": "Host", 

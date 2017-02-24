@@ -59,7 +59,7 @@
                         "rgba(237, 129, 40, 0.89)", 
                         "rgba(50, 172, 45, 0.97)"
                     ], 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 0, 
                     "editable": true, 
                     "error": false, 
@@ -152,7 +152,7 @@
                         "rgba(237, 129, 40, 0.89)", 
                         "rgba(50, 172, 45, 0.97)"
                     ], 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 0, 
                     "editable": true, 
                     "error": false, 
@@ -255,7 +255,7 @@
                         "rgba(237, 129, 40, 0.89)", 
                         "rgba(245, 54, 54, 0.9)"
                     ], 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 0, 
                     "editable": true, 
                     "error": false, 
@@ -348,7 +348,7 @@
                         "rgba(237, 129, 40, 0.89)", 
                         "rgba(50, 172, 45, 0.97)"
                     ], 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 0, 
                     "editable": true, 
                     "error": false, 
@@ -441,7 +441,7 @@
                         "rgba(237, 129, 40, 0.89)", 
                         "rgba(245, 54, 54, 0.9)"
                     ], 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 0, 
                     "editable": true, 
                     "error": false, 
@@ -526,7 +526,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": null, 
                     "editable": true, 
                     "error": false, 
@@ -619,7 +619,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 0, 
                     "editable": true, 
                     "error": false, 
@@ -712,7 +712,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": null, 
                     "editable": true, 
                     "error": false, 
@@ -824,7 +824,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": null, 
                     "editable": true, 
                     "error": false, 
@@ -942,7 +942,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": null, 
                     "editable": true, 
                     "error": false, 
@@ -1035,7 +1035,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": null, 
                     "editable": true, 
                     "error": false, 
@@ -1127,7 +1127,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": null, 
                     "editable": true, 
                     "error": false, 
@@ -1220,7 +1220,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": null, 
                     "editable": true, 
                     "error": false, 
@@ -1325,7 +1325,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": null, 
                     "editable": true, 
                     "error": false, 
@@ -1418,7 +1418,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": true, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": null, 
                     "editable": true, 
                     "error": false, 
@@ -1522,7 +1522,7 @@
             "panels": [
                 {
                     "content": "`Galera Replication Queues` - Shows the length of receive and send queues.\n\n`Galera Cluster Size` - Shows the number of members currently connected to the cluster.\n\n`Galera Flow Control` - Shows the number of FC_PAUSE events sent/received. They are sent by a node when its replication queue gets too full. If a node is sending out FC messages it indicates the problem.\n\n`Galera Parallelization Efficiency` - Shows the average distances between highest and lowest seqno that are concurrently applied, committed and can be possibly applied in parallel (potential degree of parallelization).\n\n`Galera Writing Conflicts` - Shows the number of local transactions being committed on this node that failed certification (some other node had a commit that conflicted with ours) \u2013 client received deadlock error on commit and also the number of local transactions in flight on this node that were aborted because they locked something an applier thread needed \u2013 deadlock error anywhere in an open transaction. The spikes on the graph may indicate writing to the same table potentially the same rows from 2 nodes.\n\n`Available Downtime before SST Required` - Shows for how long time the node can be taken out of the cluster before SST is required. SST is a full state transfer method.\n\n`Galera Writeset Count` - Shows the count of transactions received from the cluster (any other node) and replicated to the cluster (from this node).\n\n`Galera Writeset Size` - Shows the average transaction size received/replicated.\n\n`Galera Writeset Traffic`, `Galera Network Usage Hourly` - Shows the bytes of data received from the cluster (any other node) and replicated to the cluster (from this node).", 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "editable": true, 
                     "error": false, 
                     "id": 54, 
@@ -1560,7 +1560,7 @@
                     "text": "auto", 
                     "value": "$__auto_interval"
                 }, 
-                "datasource": "Prometheus", 
+                "datasource": "$Source", 
                 "hide": 0, 
                 "includeAll": false, 
                 "label": "Interval", 
@@ -1612,11 +1612,21 @@
                 "query": "1s,5s,1m,5m,1h,6h,1d", 
                 "refresh": 2, 
                 "type": "interval"
-            }, 
+            },
+            {
+                "hide": 0,
+                "label": null,
+                "name": "Source",
+                "options": [],
+                "query": "prometheus",
+                "refresh": 1,
+                "regex": "",
+                "type": "datasource"
+            },
             {
                 "allFormat": "glob", 
                 "allValue": null, 
-                "datasource": "Prometheus", 
+                "datasource": "$Source", 
                 "hide": 0, 
                 "includeAll": false, 
                 "label": "Cluster", 
@@ -1635,7 +1645,7 @@
             {
                 "allFormat": "glob", 
                 "allValue": null, 
-                "datasource": "Prometheus", 
+                "datasource": "$Source", 
                 "hide": 0, 
                 "includeAll": false, 
                 "label": "Host", 

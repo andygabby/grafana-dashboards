@@ -68,7 +68,7 @@
                         "Used (device /dev/xvda1, ext4)": "#BA43A9"
                     }, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -168,7 +168,7 @@
             "panels": [
                 {
                     "content": "`Disk Space` -  Amount of disk space used and available on various mount points.  Running out of disk space on OS volume,  database volume or volume used for temporary space can cause downtime.   Some storage may also have reduced performance when small amount of space is available.\n", 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "editable": true, 
                     "error": false, 
                     "height": "50px", 
@@ -187,7 +187,7 @@
                         "Used (device /dev/xvda1, ext4)": "#BA43A9"
                     }, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -306,7 +306,7 @@
                         "Used (device /dev/xvda1, ext4)": "#BA43A9"
                     }, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -448,7 +448,7 @@
                     "text": "auto", 
                     "value": "$__auto_interval"
                 }, 
-                "datasource": "Prometheus", 
+                "datasource": "$Source", 
                 "hide": 0, 
                 "includeAll": false, 
                 "label": "Interval", 
@@ -500,11 +500,21 @@
                 "query": "1s,5s,1m,5m,1h,6h,1d", 
                 "refresh": 2, 
                 "type": "interval"
+            },
+            {
+                "hide": 0,
+                "label": null,
+                "name": "Source",
+                "options": [],
+                "query": "prometheus",
+                "refresh": 1,
+                "regex": "",
+                "type": "datasource"
             }, 
             {
                 "allFormat": "glob", 
                 "allValue": null, 
-                "datasource": "Prometheus", 
+                "datasource": "$Source", 
                 "hide": 0, 
                 "includeAll": false, 
                 "label": "Host", 
@@ -524,7 +534,7 @@
             {
                 "allFormat": "wildcard", 
                 "allValue": null, 
-                "datasource": "Prometheus", 
+                "datasource": "$Source", 
                 "hide": 2, 
                 "hideLabel": false, 
                 "includeAll": true, 

@@ -52,7 +52,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -147,7 +147,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -261,7 +261,7 @@
                 }, 
                 {
                     "content": "These graphs are available only for [Percona Server](https://www.percona.com/doc/percona-server/5.6/diagnostics/response_time_distribution.html) and [MariaDB](https://mariadb.com/kb/en/mariadb/query_response_time-plugin/). It requires query response time plugin installed and `query_response_time_stats ` variable turned on.\n\nRead/write split below is available only for Percona Server 5.6/5.7.", 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "editable": true, 
                     "error": false, 
                     "height": "50px", 
@@ -289,7 +289,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -397,7 +397,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -512,7 +512,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 2, 
                     "editable": true, 
                     "error": false, 
@@ -651,7 +651,7 @@
                     "text": "auto", 
                     "value": "$__auto_interval"
                 }, 
-                "datasource": "Prometheus", 
+                "datasource": "$Source", 
                 "hide": 0, 
                 "includeAll": false, 
                 "label": "Interval", 
@@ -703,11 +703,21 @@
                 "query": "1s,5s,1m,5m,1h,6h,1d", 
                 "refresh": 2, 
                 "type": "interval"
-            }, 
+            },
+            {
+                "hide": 0,
+                "label": null,
+                "name": "Source",
+                "options": [],
+                "query": "prometheus",
+                "refresh": 1,
+                "regex": "",
+                "type": "datasource"
+            },
             {
                 "allFormat": "glob", 
                 "allValue": null, 
-                "datasource": "Prometheus", 
+                "datasource": "$Source", 
                 "hide": 0, 
                 "includeAll": false, 
                 "label": "Host", 

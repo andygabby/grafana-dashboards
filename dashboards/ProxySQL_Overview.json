@@ -53,7 +53,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": 0, 
                     "editable": true, 
                     "error": false, 
@@ -154,7 +154,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": null, 
                     "editable": true, 
                     "error": false, 
@@ -235,7 +235,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": null, 
                     "editable": true, 
                     "error": false, 
@@ -332,7 +332,7 @@
                             "value": "current"
                         }
                     ], 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "editable": true, 
                     "error": false, 
                     "fontSize": "100%", 
@@ -384,7 +384,7 @@
                 }, 
                 {
                     "content": "Status number to state mapping:\n\n1 `ONLINE`\n\n2 `SHUNNED`\n\n3 `OFFLINE_SOFT`\n\n4 `OFFLINE_HARD`\n\nFor status details, see the [description](https://github.com/sysown/proxysql/blob/master/doc/admin_tables.md#mysql_servers).", 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "editable": true, 
                     "error": false, 
                     "id": 58, 
@@ -410,7 +410,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": null, 
                     "editable": true, 
                     "error": false, 
@@ -491,7 +491,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": null, 
                     "editable": true, 
                     "error": false, 
@@ -584,7 +584,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": null, 
                     "editable": true, 
                     "error": false, 
@@ -665,7 +665,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": null, 
                     "editable": true, 
                     "error": false, 
@@ -757,7 +757,7 @@
                 {
                     "aliasColors": {}, 
                     "bars": false, 
-                    "datasource": "Prometheus", 
+                    "datasource": "$Source", 
                     "decimals": null, 
                     "editable": true, 
                     "error": false, 
@@ -862,7 +862,7 @@
                     "text": "auto", 
                     "value": "$__auto_interval"
                 }, 
-                "datasource": "Prometheus", 
+                "datasource": "$Source", 
                 "hide": 0, 
                 "includeAll": false, 
                 "label": "Interval", 
@@ -914,11 +914,21 @@
                 "query": "1s,5s,1m,5m,1h,6h,1d", 
                 "refresh": 2, 
                 "type": "interval"
-            }, 
+            },
+            {
+                "hide": 0,
+                "label": null,
+                "name": "Source",
+                "options": [],
+                "query": "prometheus",
+                "refresh": 1,
+                "regex": "",
+                "type": "datasource"
+            },
             {
                 "allFormat": "glob", 
                 "allValue": null, 
-                "datasource": "Prometheus", 
+                "datasource": "$Source", 
                 "hide": 0, 
                 "includeAll": false, 
                 "label": "ProxySQL Instance", 
@@ -937,7 +947,7 @@
             {
                 "allFormat": "glob", 
                 "allValue": null, 
-                "datasource": "Prometheus", 
+                "datasource": "$Source", 
                 "hide": 0, 
                 "includeAll": false, 
                 "label": "Hostgroup", 
